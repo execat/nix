@@ -53,7 +53,6 @@
     fzf
     python38Packages.howdoi
     htop
-    jq
     kaggle
     pstree
     ripgrep
@@ -65,6 +64,10 @@
     wget
     xz
     youtube-dl
+    
+    # CLI utils
+    jq
+    yq
 
     # Rust utilities
     bat
