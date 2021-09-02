@@ -63,7 +63,9 @@ in {
       "homebrew/cask-fonts"
       "homebrew/cask-drivers"
     ];
-    brews = [];
+    brews = [
+      "zmq"
+    ];
     casks = [
       # Markdown_editors
       "macdown"

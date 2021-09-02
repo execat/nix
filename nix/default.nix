@@ -7,7 +7,7 @@
 
   # Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
-  
+
   nixpkgs.config.allowUnfree = true;
 
   # Use this option to avoid issues on macOS version upgrade

@@ -19,6 +19,11 @@
   # changes in each release.
   home.stateVersion = "21.03";
 
+  home.sessionVariables = {
+    NIX_PATH="darwin-config=$HOME/.nix/darwin-configuration.nix:$HOME/.nix-defexpr/channels:$NIX_PATH";
+    PATH="$PATH:$HOME/.gem/ruby/3.0.0/bin";
+  };
+
   programs.zsh = {
     enable = true;
     enableAutosuggestions = true;
@@ -61,7 +66,7 @@
     shellAliases = {
       # Update
       update_mac = "sudo softwareupdate -iva";
-      
+
       # Shell shortcuts
       x = "exit";
       ll = "ls -al";
@@ -72,32 +77,33 @@
       e = "$EDITOR";
       # v = "$VISUAL";
       path = "echo $PATH | tr -s \":\" \"\n\"";
+      nix_path = "echo $NIX_PATH | tr -s \":\" \"\n\"";
       rscp = "rsync --partial --progress --rsh = ssh";
       convim = "vim -u /usr/share/vim/vimrc";
       agi = "ag -i";
       ccat = "ccat --bg = dark";
       v = "f -t -e vim -b viminfo";
       j = "fasd_cd -d";
-      
+
       # Python
       update_pip_3 = "pip3 install --upgrade pip setuptools wheel";
-      
+
       # Ruby
       be = "bundle exec";
       bi = "bundle install";
       hist = "history | grep";
-      
+
       # Downloads
       dl_webpages = "wget -A html,pdf,txt -m -p -E -k -K -np -e robots = off -U mozilla";
-      
+
       # tmux
       tatt = "tmux attach-session -t";
       tlist = "tmux list-sessions";
       tnew = "tmux new -s";
-      
+
       # Postgres
       laptop_pg_create_user = "createuser -d -s -P";
-      
+
       # NPM
       npmlist = "npm list -g --depth 0";
     };
@@ -112,8 +118,8 @@
   programs.tmux = {
     enable = true;
     extraConfig = ''
-      set -g default-terminal "screen-256color" 
-      
+      set -g default-terminal "screen-256color"
+
       # THEME
       set -g status-bg black
       set -g status-fg white
@@ -122,42 +128,42 @@
       set -g status-left ' #[default]'
       set -g status-right '#[fg=colour200]%H:%M#[default]'
       set -g mouse on
-      
+
       #set-option -g status-left "#(~/Git/tmux-powerline/status-left.sh)"
       #set-option -g status-right "#(~/Git/tmux-powerline/status-right.sh)"
-      
+
       # Start at 1
       set -g base-index 1
-      
+
       setw -g window-status-format '#[fg=colour235]#I #[fg=white]#W#[default]  '
       setw -g window-status-current-format '#[bg=white,fg=black]⮀ #W #[bg=black,fg=white]⮀'
-      
+
       ## GNU Screen bindings
       # Set the prefix to ^A.
       unbind C-b
       set -g prefix ^A
       bind a send-prefix
-      
-      # lockscreen ^X x 
+
+      # lockscreen ^X x
       unbind ^X
       bind ^X lock-server
       unbind x
       bind x lock-server
-      
-      # screen ^C c 
+
+      # screen ^C c
       unbind ^C
       bind ^C new-window
       bind c new-window
-      
+
       # detach ^D d
       unbind ^D
       bind ^D detach
-      
-      # displays * 
+
+      # displays *
       unbind *
       bind * list-clients
-      
-      # next ^@ ^N sp n 
+
+      # next ^@ ^N sp n
       unbind ^@
       bind ^@ next-window
       unbind ^N
@@ -166,16 +172,16 @@
       bind " " next-window
       unbind n
       bind n next-window
-      
+
       # title A
       unbind A
       bind A command-prompt "rename-window %%"
-      
+
       # other ^A
       unbind ^A
       bind ^A last-window
-      
-      # prev ^H ^P p ^? 
+
+      # prev ^H ^P p ^?
       unbind ^H
       bind ^H previous-window
       unbind ^P
@@ -184,39 +190,39 @@
       bind p previous-window
       unbind BSpace
       bind BSpace previous-window
-      
-      # windows ^W w 
+
+      # windows ^W w
       unbind ^W
       bind ^W list-windows
       unbind w
       bind w list-windows
-      
-      # quit \ 
+
+      # quit \
       #unbind \
       # bind \ confirm-before "kill-server"
-      
-      # kill K k 
+
+      # kill K k
       unbind K
       bind K confirm-before "kill-window"
       unbind k
       bind k confirm-before "kill-window"
-      
-      # redisplay ^L l 
+
+      # redisplay ^L l
       unbind ^L
       bind ^L refresh-client
       unbind l
       bind l refresh-client
-      
+
       # split -v |
       unbind |
       bind | split-window
-      
+
       # :kB: focus up
       unbind Tab
       bind Tab select-pane -t:.+
       unbind BTab
       bind BTab select-pane -t:.-
-      
+
       # " windowlist -b
       unbind '"'
       bind '"' choose-window
@@ -238,7 +244,7 @@
         identitiesOnly = true;
         identityFile = ["~/.ssh/localhost"];
         user = "atm";
-        hostname = "192.168.1.102";
+        hostname = "192.168.1.103";
       };
       "pi" = {
         host = "pi";
@@ -326,3 +332,4 @@
     };
   };
 }
+
