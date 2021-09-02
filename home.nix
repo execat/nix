@@ -328,6 +328,7 @@
       core.editor = "vim";
       core.whitespace = "fix,-indent-with-non-tab,trailing-space,cr-at-eol";
       init.defaultBranch = "dev";
+      push.default = "current";
       merge.conflictstyle = "diff3";
     };
   };
