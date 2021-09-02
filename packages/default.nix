@@ -46,7 +46,7 @@
     gnutar
     gnugrep
     gnupg
-    
+
     # Utilities
     aerc
     cairo
@@ -71,7 +71,7 @@
     wget
     xz
     youtube-dl
-    
+
     # CLI utils
     jq
     yq
@@ -149,15 +149,16 @@
     # rkdeveloptool
     # qemu
     # qemu_full
- 
+
     # Text editors
     emacs
     neovim
     vim
-    
+
     # Shell
     bash
     bash-completion
     fish
   ];
 }
+
