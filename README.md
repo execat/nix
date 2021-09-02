@@ -4,6 +4,10 @@ Run to install:
 
 ```
 $ export NIX_PATH=darwin-config=$HOME/.nixpkgs/darwin-configuration.nix:$HOME/.nix-defexpr/channels:$NIX_PATH
+Install nix-darwin: https://github.com/LnL7/nix-darwin
+Install home-manager: https://github.com/nix-community/home-manager
+Then do:
+$ nix-channel --update
 $ darwin-rebuild switch --show-trace
 ```
 

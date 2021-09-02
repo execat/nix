@@ -75,6 +75,12 @@ in {
       "sigil" # Epub editor
       "skim"
 
+      # Security
+      "gpg-suite"
+      "yubico-yubikey-manager"
+      "yubico-yubikey-personalization-gui"
+      "yubico-yubikey-piv-manager"
+
       # Utils
       "alacritty"
       "angry-ip-scanner"
@@ -104,6 +110,7 @@ in {
       "nvalt"
       "selfcontrol"
       "smcfancontrol"
+      "squeak"
       "tomighty"
       "suspicious-package"
       "tunnelblick"
@@ -133,6 +140,7 @@ in {
       "synfigstudio"
 
       # Communication
+      "bluejeans"
       "discord"
       "element"
       "flume"
@@ -167,10 +175,13 @@ in {
       # Games
       "0-ad"
       "openttd"
+      "steam"
+      "widelands"
 
       # Programming
       "kitematic"
       "parallels"
+      "github"
       "virtualbox"
       "virtualbox-extension-pack"
 
@@ -186,6 +197,7 @@ in {
       "r"
       "rstudio"
       "sublime-text"
+      "textmate"
       "visual-studio-code"
 
       # RestClient

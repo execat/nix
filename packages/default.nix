@@ -11,7 +11,11 @@
   environment.systemPackages = with pkgs; [
     # Dependencies for Ruby/Nokogiri
     (lowPrio ruby_2_7)
+    # ruby
+    # rubyPackages.activesupport
     ruby_3_0
+    rubyPackages_3_0.pry
+    rubyPackages_3_0.parallel
     rubyPackages_3_0.activesupport
     bundix
     libiconv
@@ -21,8 +25,9 @@
 
     # Nix utils
     nix-index
+    # nixFlakes
     nox
-    nixUnstable
+    # nixUnstable
     lorri
 
     # Core utils
@@ -31,6 +36,7 @@
     coreutils
     findutils
     moreutils
+    openssh
     pkg-config
 
     # GNU utilities
@@ -39,6 +45,7 @@
     gnused
     gnutar
     gnugrep
+    gnupg
     
     # Utilities
     aerc
@@ -51,7 +58,7 @@
     fortune
     ffmpeg-full
     fzf
-    python38Packages.howdoi
+    # python38Packages.howdoi
     htop
     kaggle
     pstree
@@ -91,6 +98,7 @@
     elmPackages.elm
     erlang
     go
+    leiningen
     nodejs
     pipenv
     python38Full
@@ -105,9 +113,9 @@
     cargo
 
     # Anaconda
-    gophernotes
-    iruby
-    jupyter
+    # gophernotes
+    # iruby
+    # jupyter
     # python38Packages.bash_kernel
     # python38Packages.ipykernel
     # python38Packages.ipython

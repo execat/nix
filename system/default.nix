@@ -4,6 +4,11 @@
   # Set timezone
   time.timeZone = "Asia/Singapore";
 
+  services.postgresql = {
+    enable = true;
+    package = pkgs.postgresql;
+  };
+
   # Try to disable .DS_Store: defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
   # Disable disk image verification:
   # defaults write com.apple.frameworks.diskimages skip-verify -bool true
