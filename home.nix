@@ -223,6 +223,68 @@
     '';
   };
 
+  programs.ssh = {
+    enable = true;
+    matchBlocks = {
+      "wuxi" = {
+        host = "wuxi";
+        identitiesOnly = true;
+        identityFile = ["~/.ssh/localhost"];
+        user = "atm";
+        hostname = "192.168.1.101";
+      };
+      "lhasa" = {
+        host = "lhasa";
+        identitiesOnly = true;
+        identityFile = ["~/.ssh/localhost"];
+        user = "atm";
+        hostname = "192.168.1.102";
+      };
+      "pi" = {
+        host = "pi";
+        identitiesOnly = true;
+        identityFile = ["~/.ssh/localhost"];
+        user = "pi";
+        hostname = "192.168.1.125";
+      };
+      "chengdu" = {
+        host = "chengdu";
+        identitiesOnly = true;
+        identityFile = ["~/.ssh/localhost"];
+        user = "atm";
+        hostname = "192.168.1.114";
+      };
+      "yantai" = {
+        host = "yantai";
+        identitiesOnly = true;
+        identityFile = ["~/.ssh/localhost"];
+        user = "atm";
+        hostname = "192.168.1.131";
+      };
+      "digitalocean" = {
+        host = "digitalocean";
+        identitiesOnly = true;
+        identityFile = ["~/.ssh/digitalocean"];
+        user = "atm";
+        hostname = "192.168.1.1";
+      };
+      "github" = {
+        host = "githhub";
+        identitiesOnly = true;
+        identityFile = ["~/.ssh/github"];
+        user = "git";
+        hostname = "github.com";
+      };
+      "srht" = {
+        host = "srht";
+        identitiesOnly = true;
+        identityFile = ["~/.ssh/srht"];
+        user = "git";
+        hostname = "git.sr.ht";
+      };
+    };
+  };
+
   programs.git = {
     enable = true;
     userName = "Anuj More";
