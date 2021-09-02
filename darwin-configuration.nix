@@ -26,7 +26,6 @@ in {
     enableFzfGit = true;
     enableFzfHistory = true;
     variables = {
-      # NIX_PATH="darwin-config=$HOME/.nix/darwin-configuration.nix:$HOME/.nix-defexpr/channels";
       ASPELL_CONF = "data-dir ${pkgs.aspell}";
       LANG = "en_US.UTF-8";
       GITSTATUS_LOG_LEVEL = "DEBUG";
@@ -35,20 +34,8 @@ in {
       # automatically start tmux
       ZSH_TMUX_AUTOSTART = "true";
       ZSH_TMUX_CONFIG = "$XDG_CONFIG_HOME/tmux/tmux.conf";
-
-      hello = "meow";
     };
   };
-
-  # programs.git = {
-  #   enable = true;
-  #   userName = "${name}";
-  #   userEmail = "${email}";
-  #   extraConfig = {
-  #     pull.rebase = false;
-  #     # url = { "git@github.com:" = { insteadOf = "https://github.com"; }; };
-  #   };
-  # };
 
   homebrew = {
     enable = true;
