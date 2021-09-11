@@ -194,6 +194,11 @@ in {
       "insomnia"
       "postman"
 
+      # Task maanger
+      "anki"
+      "notion"
+      "obsidian""
+
       # Hardware support
       "logitech-options"
 
@@ -222,10 +227,10 @@ in {
         left_padding               = 4;
         right_padding              = 4;
         window_gap                 = 4;
-        
+
         focus_follows_mouse        = "off";
         mouse_follows_focus        = "on";
-        
+
         mouse_modifier             = "fn";
         mouse_action1              = "move";
         mouse_action2              = "resize";
@@ -233,7 +238,7 @@ in {
         window_topmost             = "off";
         window_opacity             = "off";
         window_shadow              = "float";
-        
+
         active_window_opacity      = "1.0";
         normal_window_opacity      = "0.9";
         split_ratio                = "0.5";
@@ -264,3 +269,4 @@ in {
     };
   };
 }
+
