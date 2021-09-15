@@ -41,4 +41,14 @@ Edit variables:
 * `networking`: Set `hostName` and `computerName`
 * `system`: Set `timeZone`
 
+# Additional scripts not included in the installation
+
+* Disable "Try the new Safari":
+  [link](https://news.ycombinator.com/item?id=28361730)
+
+```
+    defaults write com.apple.coreservices.uiagent CSUIHasSafariBeenLaunched -bool YES
+    defaults write com.apple.coreservices.uiagent CSUIRecommendSafariNextNotificationDate -date 2050-01-01T00:00:00Z
+    defaults write com.apple.coreservices.uiagent CSUILastOSVersionWhereSafariRecommendationWasMade -float 99.99
+```
 

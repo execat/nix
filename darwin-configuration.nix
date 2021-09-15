@@ -197,7 +197,7 @@ in {
       # Task maanger
       "anki"
       "notion"
-      "obsidian""
+      "obsidian"
 
       # Hardware support
       "logitech-options"
