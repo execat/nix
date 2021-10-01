@@ -201,6 +201,7 @@ in {
 
       # Hardware support
       "logitech-options"
+      "plover"
 
       # Brew fonts
       "font-inconsolata-dz-for-powerline"
