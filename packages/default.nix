@@ -63,7 +63,6 @@
     # kaggle
     pstree
     speedtest-cli
-    # thefuck
     tmux
     tree
     tldr
@@ -93,12 +92,13 @@
     tokei             # cloc
 
     # Git utils
+    delta             # color scheme for git
     gitui             # CLI git client
     tig               # ncurses interface for git
 
     # File browser
     diskonaut         # treemap representation
-    # ddh               # duplicate file finder
+    # ddh             # duplicate file finder
     fselect           # find files like SQL queries
 
     # Specific file operations

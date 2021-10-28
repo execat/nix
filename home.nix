@@ -70,10 +70,13 @@
       # ls
       l = "exa -al";
       ll = "exa -al";
+      ls = "exa";
       lsd = "exa -lF | grep \/$";
 
-      # cat
+      # Other utils
       cat = "bat";
+      du = "dust";
+      htop = "btm";
 
       # TODO: check if anything interesting on https://github.com/rust-unofficial/awesome-rust#development-tools
 
