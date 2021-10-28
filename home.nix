@@ -56,7 +56,6 @@
         "man"
         "fasd"
         "globalias"
-        "history"
         "ssh-agent"
         "thefuck"
         "vi-mode"
@@ -67,23 +66,33 @@
       # Update
       update_mac = "sudo softwareupdate -iva";
 
-      # Shell shortcuts
-      x = "exit";
-      ll = "ls -al";
-      ln = "ln -v";
-      l = "ls -al";
-      lsd = "ls -lF | grep \/$";
-      mkdir = "mkdir -p";
-      e = "$EDITOR";
-      # v = "$VISUAL";
+      # Rust util overrides
+      # ls
+      l = "exa -al";
+      ll = "exa -al";
+      lsd = "exa -lF | grep \/$";
+
+      # cat
+      cat = "bat";
+
+      # TODO: check if anything interesting on https://github.com/rust-unofficial/awesome-rust#development-tools
+
+      # Common shortcuts
       path = "echo $PATH | tr -s \":\" \"\n\"";
       nix_path = "echo $NIX_PATH | tr -s \":\" \"\n\"";
+
+      # Shell shortcuts
+      x = "exit";
+      e = "$EDITOR";
+      # v = "$VISUAL";
       rscp = "rsync --partial --progress --rsh = ssh";
       convim = "vim -u /usr/share/vim/vimrc";
       agi = "ag -i";
       ccat = "ccat --bg = dark";
       v = "f -t -e vim -b viminfo";
       j = "fasd_cd -d";
+      ln = "ln -v";
+      mkdir = "mkdir -p";
 
       # Python
       update_pip_3 = "pip3 install --upgrade pip setuptools wheel";
@@ -112,6 +121,8 @@
       # source $HOME/.aliases
       bindkey '^R' history-incremental-pattern-search-backward
       bindkey '^F' history-incremental-pattern-search-forward
+
+     eval $(thefuck --alias)
     '';
   };
 
@@ -328,8 +339,14 @@
       core.editor = "vim";
       core.whitespace = "fix,-indent-with-non-tab,trailing-space,cr-at-eol";
       init.defaultBranch = "dev";
-      push.default = "current";
+      interactive.diffFilter = "delta --color-only --features=interactive";
       merge.conflictstyle = "diff3";
+      pull.rebase = "false";
+      push.default = "current";
+      pager.diff = "delta";
+      pager.log = "delta";
+      pager.reflog = "delta";
+      pager.show = "delta";
     };
   };
 }

@@ -18,7 +18,7 @@
     rubyPackages_3_0.parallel
     rubyPackages_3_0.activesupport
     bundix
-    libiconv
+    # libiconv
     libxml2
     libxslt
     zlib
@@ -60,9 +60,8 @@
     fzf
     # python38Packages.howdoi
     htop
-    kaggle
+    # kaggle
     pstree
-    ripgrep
     speedtest-cli
     # thefuck
     tmux
@@ -70,22 +69,52 @@
     tldr
     wget
     xz
-    youtube-dl
+    # youtube-dl
 
     # CLI utils
     jq
     yq
 
     # Rust utilities
-    bat
-    dust
-    exa
-    fd
-    hexyl
-    mdcat
-    tig
-    tokei
-    xsv
+    # Base utils
+    bat               # cat
+    bottom            # htop
+    du-dust           # du
+    exa               # ls
+    # fd              # df
+    fd                # find
+    # ion             # bash alternative from Redox OS
+    ouch              # tar, gzip, zip etc
+    procs             # ps
+    rargs             # xargs
+    rm-improved       # similar to rm with added features
+    ripgrep           # ag
+    ripgrep-all       # ag but for PDFs, books, docs, ZIP etc
+    tokei             # cloc
+
+    # Git utils
+    gitui             # CLI git client
+    tig               # ncurses interface for git
+
+    # File browser
+    diskonaut         # treemap representation
+    # ddh               # duplicate file finder
+    fselect           # find files like SQL queries
+
+    # Specific file operations
+    bingrep           # grep through binaries
+    # fblog           # format JSON log like Kibana
+    # funzzy          # file watcher
+    hexyl             # disassembler
+    mdbook            # write book in Markdown
+    mdcat             # Markdown formatter
+    xsv               # CSV displayer
+
+    bandwhich         # bandwidth analyzer
+    # checkpwn        # check HIBP database
+    grex              # generate regex from sample strings
+    mcfly             # better history search
+    pueue             # CLI task management system
 
     # Version control
     # fossil

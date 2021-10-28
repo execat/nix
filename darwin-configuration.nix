@@ -51,6 +51,7 @@ in {
       "homebrew/cask-drivers"
     ];
     brews = [
+      "thefuck"
       "zmq"
     ];
     casks = [
@@ -144,15 +145,18 @@ in {
 
       # Browsers
       "bitwarden"
+      # "brave-browser-nightly"
+      "chromium"
       "firefox"
       "google-chrome"
-      "tor-browser"
-      "beaker-browser"
-      "vivaldi"
-      "chromium"
-      # "brave-browser-nightly"
       # "opera-beta"
+      "vivaldi"
+
+      # Alternative browsers
+      "beaker-browser"
       "ipfs"
+      "lagrange"        # Finger, Gopher, Gemini
+      "tor-browser"
 
       # Media
       "audacity"
@@ -163,6 +167,8 @@ in {
 
       # Games
       "0-ad"
+      "chessx"
+      "minecraft"
       "openttd"
       "steam"
       "widelands"
@@ -202,6 +208,7 @@ in {
       # Hardware support
       "logitech-options"
       "plover"
+      "zsa-wally"
 
       # Brew fonts
       "font-inconsolata-dz-for-powerline"
