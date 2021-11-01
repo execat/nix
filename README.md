@@ -62,5 +62,9 @@ Edit variables:
     defaults write com.apple.coreservices.uiagent CSUIHasSafariBeenLaunched -bool YES
     defaults write com.apple.coreservices.uiagent CSUIRecommendSafariNextNotificationDate -date 2050-01-01T00:00:00Z
     defaults write com.apple.coreservices.uiagent CSUILastOSVersionWhereSafariRecommendationWasMade -float 99.99
+
+    # Remove all items from dock
+    defaults write com.apple.dock persistent-apps -array
+    killall Dock
 ```
 
