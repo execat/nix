@@ -8,15 +8,21 @@ $ export NIX_PATH=darwin-config=$HOME/.nix/darwin-configuration.nix:$HOME/.nix-d
 Install nix-darwin: https://github.com/LnL7/nix-darwin
 Install home-manager: https://github.com/nix-community/home-manager
 
-Create the directory and symlink home.nix:
+Home Manager usually uses ~/.config/nixpkgs/home.nix, but we will just symlink ~/.nix/home.nix to that file
+This allows us to maintain all Nix configs (darwin-nix and home-manager) in a single repo
 $ rm ~/.config/nixpkgs/home.nix
 $ ln -v -s /Users/atm/.nix/home.nix /Users/atm/.config/nixpkgs/home.nix
 
 Then update the channels one last time and run `darwin-rebuild switch`:
 $ nix-channel --update
 
-# Assuming this repo was cloned in ~/.nix:
-$ darwin-rebuild switch -I "darwin-config=$HOME/.nix/darwin-configuration.nix"      # If darwin-config not set already
+# Switch nix-darwin
+# Assuming this repo was cloned in ~/.nix and if darwin-config not set already in first step (above)
+$ darwin-rebuild switch -I "darwin-config=$HOME/.nix/darwin-configuration.nix"
+# Else
+$ darwin-rebuild switch --show-trace
+
+# Switch home-manager
 $ home-manager switch
 ```
 
