@@ -168,8 +168,8 @@ in {
       "background-music"
       "charles"
       "docker"
-      "dash"
       # "deeper"
+      "devdocs"
       "kap"
       "karabiner-elements"      # Password
       "meld"
