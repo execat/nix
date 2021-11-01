@@ -54,84 +54,6 @@ in {
       "zmq"
     ];
     casks = [
-      # Book
-      "calibre"
-      "pdf-expert" # Paid with trial for editing PDFs
-      "sigil" # Epub editor
-
-      # Security
-      "gpg-suite"
-      "yubico-yubikey-manager"
-      "yubico-yubikey-personalization-gui"
-      "yubico-yubikey-piv-manager"
-
-      # Utils
-      "alacritty"
-      "angry-ip-scanner"
-      "arduino"
-      "background-music"
-      "balenaetcher"
-      "charles"
-      "clover-configurator"
-      "docker"
-      "dash"
-      # "deeper"
-      "diffmerge"
-      "dropbox"
-      "flux"
-      "iterm2"
-      "jdiskreport"
-      "kap"
-      "karabiner-elements"
-      "keka"
-      "keepingyouawake"
-      "launchrocket"
-      "lulu"
-      "meetingbar"
-      "meld"
-      "menumeters"
-      "numi"
-      "smcfancontrol"
-      "squeak"
-      "tomighty"
-      "suspicious-package"
-      "vienna"
-
-      # Music
-      "clementine"
-      "neteasemusic"
-      "transmission"
-
-      # Database
-      "dbeaver-community"
-      "sequel-pro"
-      "db-browser-for-sqlite"
-
-      # Drawing
-      "krita"
-      "inkscape"
-      "pinta"
-      "mono-mdk"
-
-      # Animation
-      "blender"
-      "gimp"
-      "opentoonz"
-      "pencil2d"
-      "synfigstudio"
-
-      # Communication
-      "bluejeans"
-      "discord"
-      "element"
-      "keybase"
-      "nordvpn"
-      "skype"
-      "thunderbird"
-      "telegram"
-      "wechat"
-      "zoom"
-
       # Browsers
       "bitwarden"
       "chromium"
@@ -144,20 +66,55 @@ in {
       "lagrange"        # Finger, Gopher, Gemini
       "tor-browser"
 
+      # Hardware support
+      "logitech-options"
+      "plover"
+      "zsa-wally"
+
+      # Security
+      "gpg-suite"
+      "yubico-yubikey-manager"
+      "yubico-yubikey-personalization-gui"
+      "yubico-yubikey-piv-manager"
+
+      # Essential utils
+      "balenaetcher"
+      "clover-configurator"
+      "diffmerge"
+      "dropbox"
+      "flux"
+      "iterm2"
+      "jdiskreport"
+      "keka"
+      "keepingyouawake"
+      "launchrocket"
+      "lulu"
+      "meetingbar"
+      "menumeters"
+      "smcfancontrol"
+
+      # Music
+      "clementine"
+      "neteasemusic"
+      "transmission"
+
+      # Database
+      "dbeaver-community"
+      "sequel-pro"
+      "db-browser-for-sqlite"
+
+      # Essential communication
+      "element"
+      "nordvpn"
+      "thunderbird"
+      "wechat"
+
       # Media
       "audacity"
       "iina"
       "kodi"
       "tuxguitar"
       "vlc"
-
-      # Games
-      "0-ad"
-      "chessx"
-      "minecraft"
-      "openttd"
-      "steam"
-      "widelands"
 
       # Programming
       "github"
@@ -176,20 +133,67 @@ in {
       "visual-studio-code"
 
       # RestClient
-      "cocoarestclient"
+      # "cocoarestclient"
       "insomnia"
-      "postman"
+      # "postman"
 
       # Task maanger
       "anki"
       "notion"
-      "nvalt"    # Notational Velocity
+      "nvalt"                   # Notational Velocity
       "obsidian"
 
-      # Hardware support
-      "logitech-options"
-      "plover"
-      "zsa-wally"
+      # Book
+      "calibre"
+      "pdf-expert" # Paid with trial for editing PDFs
+      "sigil" # Epub editor
+
+      # Drawing
+      "krita"
+      "inkscape"
+      "pinta"                   # Password
+      "mono-mdk"
+
+      # Animation
+      "blender"
+      "gimp"
+      "opentoonz"
+      "pencil2d"
+      "synfigstudio"
+
+      # Nice to have utils
+      "alacritty"
+      "angry-ip-scanner"
+      "arduino"
+      "background-music"
+      "charles"
+      "docker"
+      "dash"
+      # "deeper"
+      "kap"
+      "karabiner-elements"      # Password
+      "meld"
+      "numi"
+      "squeak"
+      "tomighty"
+      "suspicious-package"
+      "vienna"
+
+      # Good to have communication
+      "bluejeans"
+      "discord"
+      "keybase"
+      "skype"
+      "telegram"
+      "zoom"
+
+      # Games
+      "0-ad"
+      "chessx"
+      "minecraft"
+      "openttd"
+      "steam"
+      "widelands"
 
       # Brew fonts
       "font-inconsolata-dz-for-powerline"
