@@ -23,8 +23,6 @@ in {
     enable = true;
     enableCompletion = true;
     enableFzfCompletion = true;
-    enableFzfGit = true;
-    enableFzfHistory = true;
     variables = {
       ASPELL_CONF = "data-dir ${pkgs.aspell}";
       LANG = "en_US.UTF-8";
@@ -51,19 +49,15 @@ in {
       "homebrew/cask-drivers"
     ];
     brews = [
+      "rust"
       "thefuck"
       "zmq"
     ];
     casks = [
-      # Markdown_editors
-      "macdown"
-      # "typora"
-
       # Book
       "calibre"
       "pdf-expert" # Paid with trial for editing PDFs
       "sigil" # Epub editor
-      "skim"
 
       # Security
       "gpg-suite"
@@ -97,13 +91,10 @@ in {
       "meld"
       "menumeters"
       "numi"
-      "nvalt"
-      "selfcontrol"
       "smcfancontrol"
       "squeak"
       "tomighty"
       "suspicious-package"
-      "tunnelblick"
       "vienna"
 
       # Music
@@ -133,9 +124,7 @@ in {
       "bluejeans"
       "discord"
       "element"
-      "flume"
       "keybase"
-      "noti"
       "nordvpn"
       "skype"
       "thunderbird"
@@ -145,11 +134,8 @@ in {
 
       # Browsers
       "bitwarden"
-      # "brave-browser-nightly"
       "chromium"
       "firefox"
-      "google-chrome"
-      # "opera-beta"
       "vivaldi"
 
       # Alternative browsers
@@ -174,8 +160,6 @@ in {
       "widelands"
 
       # Programming
-      "kitematic"
-      "parallels"
       "github"
       "virtualbox"
       "virtualbox-extension-pack"
@@ -186,11 +170,7 @@ in {
       # IDE
       "anaconda"
       "android-studio"
-      "atom"
-      "intellij-idea-ce"
       "hex-fiend"
-      "r"
-      "rstudio"
       "sublime-text"
       "textmate"
       "visual-studio-code"
@@ -203,6 +183,7 @@ in {
       # Task maanger
       "anki"
       "notion"
+      "nvalt"    # Notational Velocity
       "obsidian"
 
       # Hardware support

@@ -137,22 +137,13 @@
     ghc
     stack
 
+    # Disable Rust in nix temporarily
+    # » cargo run 
+    #   = note: ld: library not found for -liconv
+    #           clang-7: error: linker command failed with exit code 1 (use -v to see invocation)
     # rustup
-    rustc
-    cargo
-
-    # Anaconda
-    # gophernotes
-    # iruby
-    # jupyter
-    # python38Packages.bash_kernel
-    # python38Packages.ipykernel
-    # python38Packages.ipython
-    # python38Packages.jupyter
-    # python38Packages.jupytext
-    # python38Packages.jupyter_console
-    # python38Packages.nix-kernel
-    # python38Packages.notebook
+    # rustc
+    # cargo
 
     # SCM
     git
