@@ -21,8 +21,6 @@ in {
 
   programs.zsh = {
     enable = true;
-    enableCompletion = true;
-    enableFzfCompletion = true;
     variables = {
       ASPELL_CONF = "data-dir ${pkgs.aspell}";
       LANG = "en_US.UTF-8";
@@ -49,7 +47,6 @@ in {
       "homebrew/cask-drivers"
     ];
     brews = [
-      "rust"
       "thefuck"
       "zmq"
     ];
@@ -113,7 +110,7 @@ in {
       "audacity"
       "iina"
       "kodi"
-      "tuxguitar"
+      # "tuxguitar"
       "vlc"
 
       # Programming
@@ -189,7 +186,7 @@ in {
 
       # Games
       "0-ad"
-      "chessx"
+      # "chessx"
       "minecraft"
       "openttd"
       "steam"

@@ -11,14 +11,12 @@
   environment.systemPackages = with pkgs; [
     # Dependencies for Ruby/Nokogiri
     (lowPrio ruby_2_7)
-    # ruby
-    # rubyPackages.activesupport
     ruby_3_0
     rubyPackages_3_0.pry
     rubyPackages_3_0.parallel
     rubyPackages_3_0.activesupport
     bundix
-    # libiconv
+    libiconv
     libxml2
     libxslt
     zlib
@@ -137,13 +135,11 @@
     ghc
     stack
 
-    # Disable Rust in nix temporarily
-    # » cargo run 
-    #   = note: ld: library not found for -liconv
-    #           clang-7: error: linker command failed with exit code 1 (use -v to see invocation)
     # rustup
-    # rustc
-    # cargo
+    rustc
+    cargo
+    rust-analyzer
+    rustfmt
 
     # SCM
     git

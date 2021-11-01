@@ -26,7 +26,6 @@
 
   programs.zsh = {
     enable = true;
-    enableAutosuggestions = true;
     history.extended = true;
     plugins = [
       {
@@ -47,6 +46,15 @@
           sha256 = "0z6i9wjjklb4lvr7zjhbphibsyx51psv50gm07mbb0kj9058j6kc";
         };
       }
+      {
+        name = "zsh-fzf-history-search";
+        src = pkgs.fetchFromGitHub {
+          owner = "joshskidmore";
+          repo = "zsh-fzf-history-search";
+          rev = "07c075c13938a7f527392dd73da2595a752cae6b";
+          sha256 = "1xkygi6r083aws16fwv9q1vfbhc48k84x08f607bh6mjwnjqcbf1";
+        };
+      }
     ];
     oh-my-zsh = {
       enable = true;
@@ -55,6 +63,7 @@
         "git-extras"
         "man"
         "fasd"
+        "fzf"
         "globalias"
         "ssh-agent"
         "thefuck"
@@ -122,8 +131,6 @@
     loginExtra = ''
       setopt extendedglob
       # source $HOME/.aliases
-      bindkey '^R' history-incremental-pattern-search-backward
-      bindkey '^F' history-incremental-pattern-search-forward
 
      eval $(thefuck --alias)
     '';
