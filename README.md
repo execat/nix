@@ -39,14 +39,25 @@ Folder structure:
 ```
 .
 ├── README.md
+├── config.nix
 ├── darwin-configuration.nix
+├── home.nix
 ├── networking
+│   └── default.nix
 ├── nix
+│   └── default.nix
 ├── packages
-├── programs
+│   ├── brew.nix
+│   ├── db.nix
 │   ├── default.nix
-│   └── zsh.nix
+│   ├── editor.nix
+│   ├── nix.nix
+│   ├── shell.nix
+│   └── wm.nix
+├── resources
+│   └── skhdrc
 └── system
+    └── default.nix
 ```
 
 Edit variables:
