@@ -19,6 +19,9 @@
   # changes in each release.
   home.stateVersion = "21.03";
 
+  manual.html.enable = true;
+  manual.json.enable = true;
+
   home.sessionVariables = {
     NIX_PATH="darwin-config=$HOME/.nix/darwin-configuration.nix:$HOME/.nix-defexpr/channels:$NIX_PATH";
     PATH="$PATH:$HOME/.gem/ruby/3.0.0/bin:/usr/local/anaconda3/bin";
@@ -316,6 +319,7 @@
     enable = true;
     userName = "Anuj More";
     userEmail = "anujmorex@gmail.com";
+    delta.enable = true;
     aliases = {
       st = "status";
       ca = "commit -a";
@@ -349,15 +353,59 @@
       core.editor = "vim";
       core.whitespace = "fix,-indent-with-non-tab,trailing-space,cr-at-eol";
       init.defaultBranch = "dev";
-      interactive.diffFilter = "delta --color-only --features=interactive";
       merge.conflictstyle = "diff3";
       pull.rebase = "false";
       push.default = "current";
-      pager.diff = "delta";
-      pager.log = "delta";
-      pager.reflog = "delta";
-      pager.show = "delta";
     };
+  };
+
+  programs.java = {
+    enable = true;
+  };
+
+  programs.vscode = {
+    enable = true;
+    extensions = with pkgs.vscode-extensions; [
+      # JavaScript, React
+      dbaeumer.vscode-eslint
+      esbenp.prettier-vscode
+
+      # Git
+      donjayamanne.githistory
+      eamodio.gitlens
+
+      # From VSCode Marketplace
+      # rebornix.Ruby
+      # bbenoist.Nix
+      # Github.copilot
+
+      # Not on vscode-extensions yet:
+      # castwide.solargraph
+      # HookyQR.beautify
+      # rbbit.typescript-hero
+      # suming.react-proptypes-generate
+      # ms-vscode.Go
+      # wmaurer.change-case
+    ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+      {
+        name = "Ruby";
+        publisher = "rebornix";
+        version = "0.28.1";
+        sha256 = "179g7nc6mf5rkha75v7rmb3vl8x4zc6qk1m0wn4pgylkxnzis18w";
+      }
+      {
+        name = "copilot";
+        publisher = "Github";
+        version = "1.6.3571";
+        sha256 = "00sw75my466mzsrqjafzxbzv397vmlfafllbljvql6crxpl45v57";
+      }
+      {
+        name = "Nix";
+        publisher = "bbenoist";
+        version = "1.0.1";
+        sha256 = "0zd0n9f5z1f0ckzfjr38xw2zzmcxg1gjrava7yahg5cvdcw6l35b";
+      }
+    ];
   };
 }
 

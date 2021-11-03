@@ -8,10 +8,10 @@
   # Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
 
-  nixpkgs.config.allowUnfree = true;
-
   # Use this option to avoid issues on macOS version upgrade
   users.nix.configureBuildUsers = true;
+
+  users.users.root.shell = pkgs.bashInteractive;
 
   nix = {
     # package = pkgs.nixFlakes;

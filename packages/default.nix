@@ -8,6 +8,15 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
 
+  imports = [
+    ./shell.nix
+    ./nix.nix
+    ./editor.nix
+    ./wm.nix
+    ./db.nix
+    ./brew.nix
+  ];
+
   environment.systemPackages = with pkgs; [
     # Dependencies for Ruby/Nokogiri
     (lowPrio ruby_2_7)
@@ -22,11 +31,11 @@
     zlib
 
     # Nix utils
-    nix-index
     # nixFlakes
     nox
     # nixUnstable
     lorri
+    direnv
 
     # Core utils
     autoconf
@@ -76,6 +85,7 @@
     # Base utils
     bat               # cat
     bottom            # htop
+    broot             # tree + cd alternative
     du-dust           # du
     exa               # ls
     # fd              # df
@@ -90,7 +100,6 @@
     tokei             # cloc
 
     # Git utils
-    delta             # color scheme for git
     gitui             # CLI git client
     tig               # ncurses interface for git
 
@@ -154,9 +163,7 @@
 
     # Databases
     # pgcli
-    postgresql
     mongodb
-    redis
 
     clang
     llvm
@@ -167,14 +174,6 @@
     # qemu_full
 
     # Text editors
-    emacs
     neovim
-    vim
-
-    # Shell
-    bash
-    bash-completion
-    fish
   ];
 }
-

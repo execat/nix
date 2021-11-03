@@ -12,6 +12,7 @@ Home Manager usually uses ~/.config/nixpkgs/home.nix, but we will just symlink ~
 This allows us to maintain all Nix configs (darwin-nix and home-manager) in a single repo
 $ rm ~/.config/nixpkgs/home.nix
 $ ln -v -s /Users/atm/.nix/home.nix /Users/atm/.config/nixpkgs/home.nix
+$ ln -v -s /Users/atm/.nix/config.nix /Users/atm/.config/nixpkgs/config.nix
 
 Then update the channels one last time and run `darwin-rebuild switch`:
 $ nix-channel --update
