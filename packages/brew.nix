@@ -129,7 +129,7 @@
       "alacritty"
       "angry-ip-scanner"
       "arduino"
-      "background-music"
+      # "background-music"
       "charles"
       "docker"
       # "deeper"
