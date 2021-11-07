@@ -4,6 +4,16 @@
   # Set timezone
   time.timeZone = "Asia/Singapore";
 
+  environment.etc = {
+    "sudoers.d/10-nix-commands".text = ''
+      %admin ALL=(ALL:ALL) NOPASSWD: /run/current-system/sw/bin/darwin-rebuild, \
+                                     /run/current-system/sw/bin/nix*, \
+                                     /run/current-system/sw/bin/ln, \
+                                     /nix/store/*/activate, \
+                                     /bin/launchctl
+    '';
+  };
+
   # Try to disable .DS_Store: defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
   # Disable disk image verification:
   # defaults write com.apple.frameworks.diskimages skip-verify -bool true

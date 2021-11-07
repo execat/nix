@@ -13,6 +13,7 @@
       "homebrew/cask"
       "homebrew/cask-fonts"
       "homebrew/cask-drivers"
+      "sunnyyoung/repo"
     ];
     brews = [
       "thefuck"
@@ -73,6 +74,7 @@
       "nordvpn"
       "thunderbird"
       "wechat"
+      "wechattweak-cli"
 
       # Media
       "audacity"
