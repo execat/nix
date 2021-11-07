@@ -135,7 +135,8 @@
       setopt extendedglob
       # source $HOME/.aliases
 
-     eval $(thefuck --alias)
+      eval "$(direnv hook zsh)"
+      eval $(thefuck --alias)
     '';
   };
 
