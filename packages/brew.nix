@@ -153,6 +153,10 @@
       "telegram"
       "zoom"
 
+      # 3D printing
+      "repetier-host"
+      "slic3r"
+
       # Games
       "0-ad"
       # "chessx"
