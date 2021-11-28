@@ -13,4 +13,8 @@
     enable = true;
     package = pkgs.emacs;
   };
+
+  services.lorri = {
+    enable = true;
+  };
 }

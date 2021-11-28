@@ -33,6 +33,7 @@
     # Nix utils
     # nixFlakes
     nox
+    niv
     # nixUnstable
     lorri
     direnv
@@ -61,6 +62,7 @@
     cowsay
     curl
     direnv
+    duti       # Change default applications for extensions on Mac
     fasd
     fortune
     ffmpeg-full
