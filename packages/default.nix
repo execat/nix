@@ -151,6 +151,7 @@
     cargo
     rust-analyzer
     rustfmt
+    evcxr
 
     # SCM
     git
@@ -179,4 +180,5 @@
     emacs
     neovim
   ];
+
 }
