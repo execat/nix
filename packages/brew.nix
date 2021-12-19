@@ -20,6 +20,9 @@
       "zmq"
     ];
     casks = [
+      # WM
+      # "amethyst"
+
       # Browsers
       "bitwarden"
       "chromium"
