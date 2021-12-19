@@ -22,8 +22,11 @@
     (lowPrio ruby_2_7)
     ruby_3_0
     rubyPackages_3_0.pry
+    rubyPackages_3_0.pry-byebug
     rubyPackages_3_0.parallel
-    rubyPackages_3_0.activesupport
+    rubyPackages_3_0.rails
+    rubyPackages_3_0.awesome_print
+    rubyPackages_3_0.rest-client
     bundix
     libiconv
     libxml2
@@ -137,11 +140,12 @@
     erlang
     go
     leiningen
+    lua5_4
     nodejs
     pipenv
-    python38Full
-    python38Packages.pip
-    python38Packages.venvShellHook
+    python39Full
+    python39Packages.pip
+    python39Packages.venvShellHook
     yarn
     ghc
     stack

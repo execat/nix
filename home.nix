@@ -27,6 +27,106 @@
     PATH="$PATH:$HOME/.gem/ruby/3.0.0/bin:/usr/local/anaconda3/bin";
   };
 
+  # home.file.".bundle/config".permissions = "0644";
+  # home.file.".bundle/config".owner = "atm";
+  # home.file.".bundle/config".group = "staff";
+  home.file.".bundle/config".text = ''
+    ---
+    BUNDLE_JOBS: "7"
+    BUNDLE_FORCE_RUBY_PLATFORM: "true"
+  '';
+  home.file.".gemrc".text = ''
+    ---
+    :backtrace: false
+    :bulk_threshold: 1000
+    :sources:
+    - https://rubygems.org/
+    :update_sources: true
+    :verbose: true
+    install: "--no-rdoc --no-ri --document=yri"
+    update: "--no-rdoc --no-ri --document=yri"
+  '';
+  home.file.".irbrc".text = ''
+    require 'pry'
+    require 'pry-byebug'
+    if defined?(PryByebug)
+      Pry.commands.alias_command 's', 'step'
+      Pry.commands.alias_command 'n', 'next'
+      Pry.commands.alias_command 'f', 'finish'
+      Pry.commands.alias_command 'c', 'continue'
+    end
+
+    require 'awesome_print'
+    if defined?(AwesomePrint)
+      AwesomePrint.irb!
+    end
+  '';
+  home.file.".pryrc".text = ''
+    require 'pry-byebug'
+    if defined?(PryByebug)
+      Pry.commands.alias_command 's', 'step'
+      Pry.commands.alias_command 'n', 'next'
+      Pry.commands.alias_command 'f', 'finish'
+      Pry.commands.alias_command 'c', 'continue'
+    end
+
+    require 'awesome_print'
+    if defined?(AwesomePrint)
+      AwesomePrint.irb!
+    end
+  '';
+  home.file.".rgignore".text = ''
+    .git/
+    tags
+    /bower_components/
+    /log
+    /node_modules/
+    /tmp
+    /vendor
+  '';
+
+  programs.fzf.enable = true;
+  programs.direnv.enable = true;
+
+  home.file.".vimrc".source = resources/vimrc;
+  programs.neovim = {
+    enable = true;
+
+    plugins = with pkgs.vimPlugins; [
+      ack-vim
+      coc-highlight
+      coc-nvim
+      coc-rust-analyzer
+      ctrlp-vim
+      editorconfig-vim
+      fzf-vim
+      nerdtree
+      nerdtree-git-plugin
+      quickfix-reflector-vim
+      rainbow
+      tabular
+      vim-airline
+      vim-airline-themes
+      vim-autoformat
+      vim-colors-solarized
+      vim-devicons
+      vim-dirdiff
+      vim-dispatch
+      vim-fugitive
+      vim-gitgutter
+      vim-markdown
+      vim-nix
+      vim-sensible
+      vim-startify
+      vim-surround
+      vim-toml
+    ];
+    extraConfig = ''
+      if filereadable($HOME . "/.vimrc")
+        source $HOME/.vimrc
+      endif
+    '';
+  };
   programs.zsh = {
     enable = true;
     history.extended = true;
