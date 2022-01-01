@@ -44,6 +44,7 @@
     # Core utils
     autoconf
     automake
+    cmake
     coreutils
     findutils
     moreutils
@@ -144,8 +145,10 @@
     nodejs
     pipenv
     python39Full
+    python39Packages.setuptools
     python39Packages.pip
     python39Packages.venvShellHook
+    python39Packages.virtualenv
     yarn
     ghc
     stack
