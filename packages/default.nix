@@ -15,6 +15,7 @@
     ./wm.nix
     ./db.nix
     ./brew.nix
+    ./spacevim.nix
   ];
 
   environment.systemPackages = with pkgs; [
