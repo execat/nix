@@ -21,7 +21,7 @@
     ];
     casks = [
       # WM
-      # "amethyst"
+      "amethyst"
 
       # Browsers
       "bitwarden"
