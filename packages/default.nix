@@ -174,7 +174,7 @@
 
     # Databases
     # pgcli
-    mongodb
+    # mongodb
 
     clang
     llvm
