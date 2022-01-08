@@ -169,12 +169,8 @@
       "widelands"
 
       # Brew fonts
-      "font-inconsolata-dz-for-powerline"
-      "font-inconsolata-for-powerline"
-      # "font-inconsolata-g-for-powerline"
-      "font-menlo-for-powerline"
-      "font-meslo-for-powerline"
-      # "font-noto-mono-for-powerline"
+      "font-inconsolata-nerd-font"
+      "font-meslo-lg-nerd-font"
     ];
     masApps = {
       WireGuard = 1451685025;
