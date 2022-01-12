@@ -153,6 +153,7 @@
     yarn
     ghc
     stack
+    wabt
 
     # rustup
     rustc
@@ -188,5 +189,5 @@
     emacs
     neovim
   ];
-
 }
+

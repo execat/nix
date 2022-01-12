@@ -14,6 +14,7 @@
       "homebrew/cask-fonts"
       "homebrew/cask-drivers"
       "sunnyyoung/repo"
+      "pharo-project/pharo"
     ];
     brews = [
       "thefuck"
@@ -98,6 +99,7 @@
       "anaconda"
       "android-studio"
       "hex-fiend"
+      "pharo-launcher"          # Smalltalk environment
       "sublime-text"
       "textmate"
 
