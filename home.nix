@@ -25,6 +25,7 @@
   home.sessionVariables = {
     NIX_PATH="darwin-config=$HOME/.nix/darwin-configuration.nix:$HOME/.nix-defexpr/channels:$NIX_PATH";
     PATH="$PATH:$HOME/.gem/ruby/3.0.0/bin:/usr/local/anaconda3/bin";
+    RUST_SRC_PATH="${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
   };
 
   # home.file.".bundle/config".permissions = "0644";
