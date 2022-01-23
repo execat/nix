@@ -173,6 +173,7 @@
       # Brew fonts
       "font-inconsolata-nerd-font"
       "font-meslo-lg-nerd-font"
+      "font-noto-nastaliq-urdu"
     ];
     masApps = {
       WireGuard = 1451685025;

@@ -150,6 +150,7 @@
     python39Packages.pip
     python39Packages.venvShellHook
     python39Packages.virtualenv
+    swiProlog
     yarn
     ghc
     stack
