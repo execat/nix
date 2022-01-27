@@ -84,7 +84,7 @@
       "audacity"
       "iina"
       "kodi"
-      # "tuxguitar"
+      "tuxguitar"
       "vlc"
 
       # Programming
@@ -149,6 +149,7 @@
       "tomighty"
       "suspicious-package"
       "vienna"
+      "xquartz"
 
       # Good to have communication
       "bluejeans"

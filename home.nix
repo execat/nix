@@ -22,10 +22,12 @@
   manual.html.enable = true;
   manual.json.enable = true;
 
+  # DISPLAY needs to be set for Xquartz for X11 forwarding
   home.sessionVariables = {
     NIX_PATH="darwin-config=$HOME/.nix/darwin-configuration.nix:$HOME/.nix-defexpr/channels:$NIX_PATH";
     PATH="$PATH:$HOME/.gem/ruby/3.0.0/bin:/usr/local/anaconda3/bin";
     RUST_SRC_PATH="${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
+    DISPLAY=":0.0";
   };
 
   # home.file.".bundle/config".permissions = "0644";
@@ -371,6 +373,7 @@
         identityFile = ["~/.ssh/localhost"];
         user = "atm";
         hostname = "192.168.1.103";
+        forwardX11 = true;
       };
       "pi" = {
         host = "pi";
