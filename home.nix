@@ -115,6 +115,7 @@
       vim-devicons
       vim-dirdiff
       vim-dispatch
+      vim-elixir
       vim-fugitive
       vim-gitgutter
       vim-markdown

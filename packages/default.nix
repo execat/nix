@@ -138,6 +138,7 @@
     adoptopenjdk-bin
     chez
     elixir
+    elixir_ls
     elmPackages.elm
     erlang
     go
