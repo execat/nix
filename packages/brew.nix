@@ -105,6 +105,7 @@
 
       # RestClient
       # "cocoarestclient"
+      "http-toolkit"
       "insomnia"
       # "postman"
 

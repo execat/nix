@@ -1,4 +1,13 @@
 { config, pkgs, ... }:
+let 
+  comma = import ( pkgs.fetchFromGitHub {
+    owner = "nix-community";
+    repo = "comma";
+    rev = "02e3e5545b0c62595a77f3d5de1223c536af0614";
+    sha256 = "sha256-WBIQmwlkb/GMoOq+Dnyrk8YmgiM/wJnc5HYZP8Uw72E=";
+  }) {};
+
+in
 
 {
   # Set fonts
@@ -21,13 +30,13 @@
   environment.systemPackages = with pkgs; [
     # Dependencies for Ruby/Nokogiri
     (lowPrio ruby_2_7)
-    ruby_3_0
-    rubyPackages_3_0.pry
-    rubyPackages_3_0.pry-byebug
-    rubyPackages_3_0.parallel
-    rubyPackages_3_0.rails
-    rubyPackages_3_0.awesome_print
-    rubyPackages_3_0.rest-client
+    ruby_3_1
+    rubyPackages_3_1.pry
+    rubyPackages_3_1.pry-byebug
+    rubyPackages_3_1.parallel
+    rubyPackages_3_1.rails
+    rubyPackages_3_1.awesome_print
+    rubyPackages_3_1.rest-client
     bundix
     libiconv
     libxml2
@@ -41,6 +50,7 @@
     # nixUnstable
     lorri
     direnv
+    comma
 
     # Core utils
     autoconf
