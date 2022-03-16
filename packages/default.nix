@@ -140,10 +140,6 @@ in
     mcfly             # better history search
     pueue             # CLI task management system
 
-    # Version control
-    # fossil
-    subversion
-
     # Languages
     adoptopenjdk-bin
     chez
@@ -177,6 +173,12 @@ in
     # SCM
     git
 
+    # SCM alternatives
+    fossil
+    mercurial
+    pijul
+    subversion
+
     # Web
     lynx
     w3m
@@ -188,6 +190,9 @@ in
     # Databases
     # pgcli
     # mongodb
+
+    # Deploy
+    flyctl
 
     clang
     llvm

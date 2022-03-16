@@ -142,6 +142,7 @@
       "docker"
       # "deeper"
       "devdocs"
+      "google-earth-pro"
       "kap"
       "karabiner-elements"      # Password
       "meld"
@@ -163,6 +164,7 @@
       # 3D printing
       "repetier-host"
       "slic3r"
+      "ultimaker-cura"
 
       # Games
       "0-ad"
