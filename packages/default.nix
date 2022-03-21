@@ -151,6 +151,8 @@ in
     leiningen
     lua5_4
     nodejs
+    nodePackages.typescript
+    nodePackages.typescript-language-server
     pipenv
     python39Full
     python39Packages.setuptools

@@ -24,7 +24,7 @@
 
   # DISPLAY needs to be set for Xquartz for X11 forwarding
   home.sessionVariables = {
-    NIX_PATH="darwin-config=$HOME/.nix/darwin-configuration.nix:$HOME/.nix-defexpr/channels:$NIX_PATH";
+    NIX_PATH="darwin-config=$HOME/.nix/darwin-configuration.nix:/nix/var/nix/profiles/per-user/root/channels:$HOME/.nix-defexpr/channels";
     PATH="$PATH:$HOME/.gem/ruby/3.0.0/bin:/usr/local/anaconda3/bin";
     RUST_SRC_PATH="${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
     DISPLAY=":0.0";
@@ -190,7 +190,7 @@
       lsd = "exa -lF | grep \/$";
 
       # Other utils
-      cat = "bat";
+      cat = "bat -pp";
       du = "dust";
       htop = "btm";
 
@@ -206,7 +206,6 @@
       # v = "$VISUAL";
       rscp = "rsync --partial --progress --rsh = ssh";
       convim = "vim -u /usr/share/vim/vimrc";
-      agi = "ag -i";
       ccat = "ccat --bg = dark";
       v = "f -t -e vim -b viminfo";
       j = "fasd_cd -d";
