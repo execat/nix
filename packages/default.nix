@@ -92,7 +92,7 @@ in
     tldr
     wget
     xz
-    # youtube-dl
+    youtube-dl
 
     # CLI utils
     jq

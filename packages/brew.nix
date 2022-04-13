@@ -15,6 +15,7 @@
       "homebrew/cask-drivers"
       "sunnyyoung/repo"
       "pharo-project/pharo"
+      "nrlquaker/createzap" # https://github.com/nrlquaker/homebrew-createzap
     ];
     brews = [
       "thefuck"
@@ -98,8 +99,10 @@
       # IDE
       "anaconda"
       "android-studio"
+      "gdevelop"
       "hex-fiend"
       "pharo-launcher"          # Smalltalk environment
+      "rstudio"
       "sublime-text"
       "textmate"
 
