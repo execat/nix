@@ -102,6 +102,7 @@
       "gdevelop"
       "hex-fiend"
       "pharo-launcher"          # Smalltalk environment
+      "r"
       "rstudio"
       "sublime-text"
       "textmate"
@@ -165,9 +166,9 @@
       "zoom"
 
       # 3D printing
-      "repetier-host"
-      "slic3r"
+      # Considered repetier-host, slic3r, wings3d
       "ultimaker-cura"
+      "kicad"
 
       # Games
       "0-ad"
