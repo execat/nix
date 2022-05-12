@@ -461,6 +461,10 @@
       merge.conflictstyle = "diff3";
       pull.rebase = "false";
       push.default = "current";
+      url = {
+        "ssh://git@github.com" = { insteadOf = "https://github.com" };
+        "ssh://git@gitlab.com" = { insteadOf = "https://gitlab.com" };
+      };
     };
   };
 

@@ -99,6 +99,7 @@
       # IDE
       "anaconda"
       "android-studio"
+      "emacs"
       "gdevelop"
       "hex-fiend"
       "pharo-launcher"          # Smalltalk environment
