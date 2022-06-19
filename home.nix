@@ -372,7 +372,7 @@
         identitiesOnly = true;
         identityFile = ["~/.ssh/localhost"];
         user = "atm";
-        hostname = "192.168.1.103";
+        hostname = "192.168.1.104";
         forwardX11 = true;
       };
       "pi" = {
@@ -416,6 +416,27 @@
         identityFile = ["~/.ssh/srht"];
         user = "git";
         hostname = "git.sr.ht";
+      };
+      "tildeclub" = {
+        host = "tildeclub";
+        identitiesOnly = true;
+        identityFile = ["~/.ssh/tildetown"];
+        user = "execat";
+        hostname = "tilde.club";
+      };
+      "tildetown" = {
+        host = "tildetown";
+        identitiesOnly = true;
+        identityFile = ["~/.ssh/tildetown"];
+        user = "execat";
+        hostname = "tilde.town";
+      };
+      "sdf" = {
+        host = "sdf";
+        identitiesOnly = true;
+        identityFile = ["~/.ssh/tildetown"];
+        user = "execat";
+        hostname = "sdf.org";
       };
     };
   };
@@ -462,8 +483,8 @@
       pull.rebase = "false";
       push.default = "current";
       url = {
-        "ssh://git@github.com" = { insteadOf = "https://github.com" };
-        "ssh://git@gitlab.com" = { insteadOf = "https://gitlab.com" };
+        "ssh://git@github.com" = { insteadOf = "https://github.com"; };
+        "ssh://git@gitlab.com" = { insteadOf = "https://gitlab.com"; };
       };
     };
   };

@@ -65,8 +65,8 @@
       "spaceradar"
 
       # Music
-      "clementine"
       "neteasemusic"
+      "strawberry"
       "transmission"
 
       # Database
@@ -87,6 +87,11 @@
       "kodi"
       "tuxguitar"
       "vlc"
+
+      # Video editing
+      "kdenlive"
+      "openshot-video-editor"
+      "shotcut"
 
       # Programming
       "github"
@@ -121,6 +126,7 @@
       "obsidian"
 
       # Book
+      "adobe-acrobat-reader"
       "calibre"
       "pdf-expert" # Paid with trial for editing PDFs
       "sigil" # Epub editor
