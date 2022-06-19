@@ -43,6 +43,9 @@
     direnv
     comma
 
+    # Shell
+    mosh
+
     # Core utils
     autoconf
     automake
