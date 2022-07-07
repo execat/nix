@@ -203,7 +203,6 @@
     # qemu_full
 
     # Text editors
-    emacs
     neovim
   ];
 }

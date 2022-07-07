@@ -1,6 +1,12 @@
 { config, pkgs, ... }:
 
-{
+let
+  doom-emacs = pkgs.callPackage (builtins.fetchTarball {
+    url = https://github.com/nix-community/nix-doom-emacs/archive/master.tar.gz;
+  }) {
+    doomPrivateDir = ./resources/doom.d;  # Directory containing your config.el init.el and packages.el files
+  };
+in {
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
@@ -592,5 +598,9 @@
       # }
     ];
   };
-}
 
+  programs.emacs = {
+    enable = true;
+    package = doom-emacs;
+  };
+}
