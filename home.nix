@@ -431,6 +431,13 @@
         user = "execat";
         hostname = "tilde.town";
       };
+      "tildeteam" = {
+        host = "tildeteam";
+        identitiesOnly = true;
+        identityFile = ["~/.ssh/tildetown"];
+        user = "execat";
+        hostname = "tilde.team";
+      };
       "sdf" = {
         host = "sdf";
         identitiesOnly = true;

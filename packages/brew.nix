@@ -175,6 +175,7 @@
       # 3D printing
       # Considered repetier-host, slic3r, wings3d
       "ultimaker-cura"
+      "openscad"
       "kicad"
 
       # Games

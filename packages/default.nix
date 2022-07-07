@@ -103,7 +103,7 @@
     fd                # find
     # ion             # bash alternative from Redox OS
     ouch              # tar, gzip, zip etc
-    procs             # ps
+    # procs           # ps
     rargs             # xargs
     rm-improved       # similar to rm with added features
     ripgrep           # ag
@@ -134,16 +134,11 @@
     mcfly             # better history search
     pueue             # CLI task management system
 
-    # Languages
+    # Languages: Practical
     adoptopenjdk-bin
-    chez
     elixir
     elixir_ls
-    elmPackages.elm
-    erlang
     go
-    leiningen
-    lua5_4
     nodejs
     nodePackages.typescript
     nodePackages.typescript-language-server
@@ -153,18 +148,26 @@
     python39Packages.pip
     python39Packages.venvShellHook
     python39Packages.virtualenv
-    swiProlog
-    yarn
-    ghc
-    stack
-    wabt
 
+    # Languages: Practical: Rust
     # rustup
     rustc
     cargo
     rust-analyzer
     rustfmt
     # evcxr # Use it by calling `nix-shell -p '[libiconv rust-analyzer rustfmt clippy evcxr]'`
+    wabt
+
+    # Languages: Learning
+    chez
+    elmPackages.elm
+    erlang
+    leiningen
+    lua5_4
+    swiProlog
+    yarn
+    stack # Use ghc using "stack ghci"
+    opam
 
     # SCM
     git
@@ -181,6 +184,7 @@
 
     # Servers
     darkhttpd
+    # hugo
     nginx
 
     # Databases
@@ -195,7 +199,7 @@
 
     # Dev tools
     # rkdeveloptool
-    # qemu
+    qemu
     # qemu_full
 
     # Text editors
