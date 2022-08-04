@@ -2,7 +2,7 @@
 
 {
   # Set fonts
-  fonts.enableFontDir = true;
+  fonts.fontDir.enable = true;
   fonts.fonts = with pkgs; [ fira-code font-awesome roboto roboto-mono ];
 
   # List packages installed in system profile. To search by name, run:
@@ -76,6 +76,7 @@
     fortune
     ffmpeg-full
     fzf
+    graphviz
     # python38Packages.howdoi
     htop
     # kaggle

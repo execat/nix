@@ -39,6 +39,7 @@
 
       # Hardware support
       "logitech-options"
+      "mos"
       "plover"
       "zsa-wally"
 
