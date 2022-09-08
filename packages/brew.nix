@@ -3,8 +3,11 @@
 {
   homebrew = {
     enable = true;
-    autoUpdate = true;
-    cleanup = "zap";
+    onActivation = {
+      autoUpdate = true;
+      cleanup =  "zap";
+      upgrade = true;
+    };
     global = {
       brewfile = true;
     };
@@ -102,12 +105,17 @@
       # Languages
       "racket"
 
+      # Devices
+      "android-file-transfer"
+      "android-platform-tools"
+
       # IDE
       "anaconda"
       "android-studio"
       "emacs"
       "gdevelop"
       "hex-fiend"
+      "livebook"
       "pharo-launcher"          # Smalltalk environment
       "r"
       "rstudio"
@@ -137,6 +145,7 @@
       "inkscape"
       "pinta"                   # Password
       "mono-mdk"
+      "xournal-plus-plus"
 
       # Animation
       "blender"
@@ -184,6 +193,7 @@
       # "chessx"
       "minecraft"
       "openttd"
+      "openrct2"
       "steam"
       "widelands"
 

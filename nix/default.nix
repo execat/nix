@@ -8,13 +8,12 @@
   # Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
 
-  # Use this option to avoid issues on macOS version upgrade
-  users.nix.configureBuildUsers = true;
-
   users.users.root.shell = pkgs.bashInteractive;
 
   nix = {
     # package = pkgs.nixFlakes;
     # extraOptions = lib.optionalString (config.nix.package == pkgs.nixFlakes) "experimental-features = nix-command flakes";
+    # Use this option to avoid issues on macOS version upgrade
+    configureBuildUsers = true;
   };
 }

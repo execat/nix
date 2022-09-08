@@ -22,7 +22,7 @@
   system.defaults = {
     dock = {
       autohide = true;
-      autohide-time-modifier = "0.6";
+      autohide-time-modifier = 0.6;
       enable-spring-load-actions-on-all-items = true;
       launchanim = false;
       mineffect = "suck";
@@ -58,7 +58,7 @@
       NSNavPanelExpandedStateForSaveMode2 = true;
       NSTableViewDefaultSizeMode = 1;
       NSTextShowsControlCharacters = true;
-      NSWindowResizeTime = "0.001";
+      NSWindowResizeTime = 0.001;
       PMPrintingExpandedStateForPrint = true;
       # com.apple.mouse.tapBehavior = 1;
       # com.apple.swipescrolldirection = false;

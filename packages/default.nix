@@ -19,13 +19,11 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    # Dependencies for Ruby/Nokogiri
-    (lowPrio ruby_2_7)
     ruby_3_1
     rubyPackages_3_1.pry
     rubyPackages_3_1.pry-byebug
     rubyPackages_3_1.parallel
-    rubyPackages_3_1.rails
+    # rubyPackages_3_1.rails
     rubyPackages_3_1.awesome_print
     rubyPackages_3_1.rest-client
     bundix
