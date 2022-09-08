@@ -531,12 +531,6 @@ in {
         sha256 = "179g7nc6mf5rkha75v7rmb3vl8x4zc6qk1m0wn4pgylkxnzis18w";
       }
       {
-        name = "copilot";
-        publisher = "Github";
-        version = "1.6.3571";
-        sha256 = "00sw75my466mzsrqjafzxbzv397vmlfafllbljvql6crxpl45v57";
-      }
-      {
         name = "Nix";
         publisher = "bbenoist";
         version = "1.0.1";
