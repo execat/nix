@@ -63,6 +63,7 @@
       "keepingyouawake"
       "launchrocket"
       "lulu"
+      # "mas"
       "meetingbar"
       "menumeters"
       "smcfancontrol"
@@ -136,9 +137,11 @@
 
       # Book
       "adobe-acrobat-reader"
+      "adobe-digital-editions"
       "calibre"
-      "pdf-expert" # Paid with trial for editing PDFs
+      # "pdf-expert" # Paid with trial for editing PDFs
       "sigil" # Epub editor
+      # "ultimate" # Paid with trial
 
       # Drawing
       "krita"
@@ -203,7 +206,7 @@
       "font-noto-nastaliq-urdu"
     ];
     masApps = {
-      WireGuard = 1451685025;
+      # WireGuard = 1451685025;
     };
   };
 }
