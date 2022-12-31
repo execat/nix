@@ -200,6 +200,9 @@ in {
       du = "dust";
       htop = "btm";
 
+      # Nix cleanup
+      nix-cleanup = "nix-collect-garbage -d; nix-store --optimise; sudo nix-collect-garbage -d; sudo nix-store --optimise";
+
       # TODO: check if anything interesting on https://github.com/rust-unofficial/awesome-rust#development-tools
 
       # Common shortcuts
@@ -379,6 +382,14 @@ in {
         identityFile = ["~/.ssh/localhost"];
         user = "atm";
         hostname = "192.168.1.104";
+        forwardX11 = true;
+      };
+      "mokdong" = {
+        host = "mokdong";
+        identitiesOnly = true;
+        identityFile = ["~/.ssh/localhost"];
+        user = "atm";
+        hostname = "192.168.1.106";
         forwardX11 = true;
       };
       "pi" = {

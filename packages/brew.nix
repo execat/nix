@@ -90,6 +90,8 @@
       "audacity"
       "iina"
       "kodi"
+      "mpv"
+      "smplayer"
       "tuxguitar"
       "vlc"
 
@@ -101,7 +103,7 @@
       # Programming
       "github"
       "virtualbox"
-      "virtualbox-extension-pack"
+      # "virtualbox-extension-pack"
 
       # Languages
       "racket"

@@ -138,6 +138,7 @@
     elixir
     elixir_ls
     go
+    haskellPackages.ghc
     nodejs
     nodePackages.typescript
     nodePackages.typescript-language-server
