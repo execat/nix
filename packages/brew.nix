@@ -32,6 +32,7 @@
       "bitwarden"
       "chromium"
       "firefox"
+      "waterfox"
       "vivaldi"
 
       # Alternative browsers
